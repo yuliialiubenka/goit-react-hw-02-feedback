@@ -25,7 +25,10 @@ export const useStyles = createUseStyles({
         boxShadow: "rgba(90, 79, 67, 0.68) 0px 6px 8px 4px;",
 
         "&:hover": {
-            transform: "scale(1.1)"
+            transform: "scale(1.1)",
+            "@media (max-width: 600px)": {
+                transform: "none",
+            }
         }
     }
 });
